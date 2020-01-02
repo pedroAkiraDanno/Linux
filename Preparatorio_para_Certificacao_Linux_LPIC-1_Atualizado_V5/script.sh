@@ -1,49 +1,3 @@
-Principais-comandos-e-conceito
-
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-mkdir Apresentacao_e_Introducao
-
-mkdir Laboratorio_de_Estudo
-
-mkdir Comandos_GNU_e_Unix-topico_103
-
-mkdir Arquitetura_do_Sistema-topico_101
-
-mkdir Instalacao_do_Linux_e_Gerenciamento_de_Pacotes
-
-mkdir Dispositvos_Sistemas_de_Arquivos_Linux_FHS-topico_104
-
-mkdir O_Exame_101-500
-
-mkdir Shells_e_Shell_Scripting-topico_105
-
-mkdir Interfaces_de_Usuarios_e_Desktops-topico_106
-
-mkdir Tarefas_Administrativas-topico_107
-
-mkdir Servicos_Essenciais_do_Sistema-topico_108
-
-mkdir Fundamentos_de_Redes-topico_109
-
-mkdir Seguranca-topico_110
-
-mkdir O_Exame_102-500
-
-mkdir Bonus_e_Materiais_Complementares
-
-mkdir O_Legado_LPIC-1_4.0_Assuntos_Removidos_da_Versao_4.0_para_a_5.0
-
-
-
-
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-
-
 cd Comandos_GNU_e_Unix-topico_103
 
 touch Topico_103-Introducao_da_secao.txt
@@ -111,19 +65,3 @@ touch 103.8_Edicao_Basica_de_Arquivos-vi-vim.txt
 touch 103.8_Edicao_Basica_de_Arquivos-nano_e_emacs.txt
 
 touch 103.8_Edicao_Basica_de_Arquivos-Definir_Editor_Padrao.txt
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

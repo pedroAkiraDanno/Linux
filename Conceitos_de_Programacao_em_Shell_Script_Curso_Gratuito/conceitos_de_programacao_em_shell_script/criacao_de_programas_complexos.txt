@@ -1,0 +1,61 @@
+
+
+  /*********************************************
+  * OBJETIVO  : SHELL-SCRIPT 			       *
+  * CRIACAO   : 08-01-2019	                   *
+  * VERSAO    : 1.0		                       *
+  * AUTOR     : Pedro Akira Danno Lima         *
+  *********************************************/
+
+
+
+#piseudo code -> organizar como vai ser o programa 
+
+vim scriptdesktop.sh 
+
+
+#!/bin/bash 
+#
+#programa mais complexo 
+
+#mostrar que o programa comecou 
+echo "o programa foi iniciado..."
+
+#mostrar o hostname do sistema 
+echo "o nome da maquina: $(hostname)"
+
+
+#mostrar informacao sobre a versao do kernel 
+echo "a versao do kernel: $(uname -r)"
+
+
+#mostrar informacao sobre a maquina 
+echo "info sobre a maquina: $(uname -m)"
+
+
+#mostrar dispositivos em blocos disponiveis 
+echo "dispositivos em bloco disponiveis: 
+$(lsblk)"
+
+
+#mostrar espaco no sistema
+echo "espaco em disco" 
+df -h 
+
+
+
+
+
+
+
+
+chmod +x scriptdesktop.sh
+
+./argumento.sh primeiro segundo 
+
+
+
+  /****************************************************************************************************************************************************************
+  *                                                   				REFERENCIAS   		   	                               					      				  *
+  *https://www.udemy.com/course/conceitos-de-programacao-em-shell-script/learn/lecture/13868738#overview														  *
+  ****************************************************************************************************************************************************************/

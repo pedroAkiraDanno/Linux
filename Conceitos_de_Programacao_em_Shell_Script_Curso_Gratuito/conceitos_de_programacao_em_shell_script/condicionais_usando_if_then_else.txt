@@ -10,11 +10,62 @@
 
 
 
-vim scriptdesktop.sh 
+vim rockrool.sh 
 
 
 #!/bin/bash 
-#
+
+
+#checar idade do usuario e enviar para um show de acordo com a sua idade
+
+#mensagem de boas vindas 
+
+
+#coletamos a resposta do usuario
+
+
+
+#fazermos o teste com o if 
+
+
+
+#se for verdadeiro
+
+
+#se for falso 
+
+
+#fechamos a condicional 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

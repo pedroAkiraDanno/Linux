@@ -2,9 +2,9 @@
 
 
   /*********************************************
-  * OBJETIVO  : SHELL-SCRIPT 			       *
+  * OBJETIVO  : SHELL-SCRIPT 			             *
   * CRIACAO   : 05-01-2019	                   *
-  * VERSAO    : 1.0		                       *
+  * VERSAO    : 1.0		                         *
   * AUTOR     : Pedro Akira Danno Lima         *
   *********************************************/
 
@@ -32,11 +32,30 @@ primeiros programas
 são arquivos de textos, comandos lidos em linha por linha 
 
 
+
 vim 
 
+touch primeiroPrograma.sh 
 
+vim primeiroPrograma.sh 
+
+
+#!/bin/bash
+echo "ola mundo"
+
+
+./primeiroPrograma.sh
+
+
+# executacao
+chmod +x primeiroPrograma.sh
+
+#ler
+chmod +r primeiroPrograma.sh
  
 
+
+convernsao de shell script é terminar com .sh 
 
 
 
@@ -63,6 +82,6 @@ vim
 
 
   /****************************************************************************************************************************************************************
-  *                                                   				REFERENCIAS   		   	                               					      				  *
+  *                                                   				REFERENCIAS   		   	                               					      				                        *
   *https://www.udemy.com/course/conceitos-de-programacao-em-shell-script/learn/lecture/13868314?components=buy_button%2Cintroduction_asset%2Cpurchase#overview	  *			    
   ****************************************************************************************************************************************************************/

@@ -17,25 +17,186 @@ vim rockrool.sh
 
 
 #checar idade do usuario e enviar para um show de acordo com a sua idade
+#Nome: ./rocknroll
+
 
 #mensagem de boas vindas 
+# $0 fala o nome do programa 
+echo "bem vindo ao nosso programa $0"
 
 
 #coletamos a resposta do usuario
-
+echo "qual sua idade?"
+read IDADE 
 
 
 #fazermos o teste com o if 
-
+if [[ $(IDADE) -ge 18 ]]
 
 
 #se for verdadeiro
+then 
+  echo "voce tem 18 anos ou mais "
+  echo "aqui esta seu ingresso para o show 1"
 
 
 #se for falso 
+else 
+  echo "voce tem menos de 18 anos"
+  echo "aqui esta o ingresso para o show 2"
 
 
 #fechamos a condicional 
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+elif [[ ${IDADE} -ge 16]]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#string sempre em aspas 
+
+
+
+
+
+man test 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#!/bin/bash
+
+#testar se o usuario tem permisao de root 
+
+#nome: testroot.sh
+
+
+#testar se usuario tem permisao de root 
+if [[ ${UID} -eq 0 ]]
+
+#se for root, rodar opcoes do root 
+then
+  echo "voce tem permissao de root"
+  echo "voce quer reiniciar o servidor?"
+  echo "digite (s) para sim, e (n) para nao"
+  read RESP
+
+
+  if [[ ${RESP} = "s" ]]
+
+  then 
+      echo "voce pediu para reinicar o servidor"
+      echo "reiniciando o servidor"
+      reboot
+  else 
+      echo"OK. Nenhuma acao sera feita."
+  fi
+
+
+
+
+
+#se nao for root, pedir para virar rott 
+else
+  echo "por favor vire root para usar esse programa"
+
+#encerrar condicional
+fi
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,84 @@
+
+
+  /*********************************************
+  * OBJETIVO  : SHELL-SCRIPT                   *
+  * CRIACAO   : 08-01-2019                     *
+  * VERSAO    : 1.0                            *
+  * AUTOR     : Pedro Akira Danno Lima         *
+  *********************************************/
+
+
+
+
+vim script03.sh 
+
+
+
+#!/bin/bash 
+
+#exemplo for loop
+
+for i in 1 2 3 
+do 
+  echo "numero da vez sera: ${i}"
+
+done
+
+
+
+
+
+
+
+vim script03.sh 
+
+
+
+#!/bin/bash 
+
+#exemplo for loop
+
+for i in {1..10}
+do 
+  echo "numero da vez sera: ${i}"
+
+done
+
+
+
+
+
+
+
+
+
+
+
+groupadd dev 
+
+
+for i in {tina tim bob bia};do adduser -G dev $i;done
+
+
+
+tail /etc/passwd
+
+
+
+
+
+
+
+
+
+chmod +x scriptdesktop.sh
+
+./argumento.sh primeiro segundo 
+
+
+
+  /********************************************************************************************************************
+  *                                                           REFERENCIAS                                             *
+  *https://www.udemy.com/course/conceitos-de-programacao-em-shell-script/learn/lecture/13868746#overview              *
+  *https://www.vivaolinux.com.br/dica/Colocando-script-na-inicializacao-do-Linux-(Ubuntu-Debian)                      *
+  ********************************************************************************************************************/

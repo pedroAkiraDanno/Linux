@@ -1,9 +1,9 @@
 
 
   /*********************************************
-  * OBJETIVO  : SHELL-SCRIPT 			             *
-  * CRIACAO   : 08-01-2019	                   *
-  * VERSAO    : 1.0		                         *
+  * OBJETIVO  : SHELL-SCRIPT                   *
+  * CRIACAO   : 08-01-2019                     *
+  * VERSAO    : 1.0                            *
   * AUTOR     : Pedro Akira Danno Lima         *
   *********************************************/
 
@@ -239,6 +239,6 @@ chmod +x scriptdesktop.sh
 
 
   /********************************************************************************************************************
-  *                                                   				REFERENCIAS   		   	                         				  *
-  *https://www.udemy.com/course/conceitos-de-programacao-em-shell-script/learn/lecture/13901298#overview						  *
+  *                                                           REFERENCIAS                                             *
+  *https://www.udemy.com/course/conceitos-de-programacao-em-shell-script/learn/lecture/13901298#overview              *
   ********************************************************************************************************************/

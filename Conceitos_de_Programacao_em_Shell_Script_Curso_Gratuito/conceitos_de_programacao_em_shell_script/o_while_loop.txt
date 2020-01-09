@@ -50,6 +50,61 @@ chmod +x scriptdesktop.sh
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------
+EXPRESSAO ATIRIMETICA 
+
+#!/bin/bash
+
+
+PRIMEIRO=4
+SEGUNDO=2
+
+
+echo "add"
+echo $((PRIMEIRO+SEGUNDO))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   /********************************************************************************************************************
   *                                                           REFERENCIAS                                             *
   *https://www.udemy.com/course/conceitos-de-programacao-em-shell-script/learn/lecture/13868746#overview              *

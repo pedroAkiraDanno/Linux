@@ -1,0 +1,57 @@
+
+
+  /*********************************************
+  * OBJETIVO  : SHELL-SCRIPT                   *
+  * CRIACAO   : 08-01-2019                     *
+  * VERSAO    : 1.0                            *
+  * AUTOR     : Pedro Akira Danno Lima         *
+  *********************************************/
+
+
+
+
+vim script03.sh 
+
+
+
+#!/bin/bash 
+
+#exemplo for while loop
+
+
+COUNT=1
+
+while [[ ${COUNT -le 10}]]
+
+
+do 
+  echo "volta de numero ${COUNT}"
+  ((COUNT++))
+
+done 
+
+echo "o valor do COUNT  quando o loop terminou ${COUNT}"
+
+
+
+
+
+
+
+
+
+
+
+
+
+chmod +x scriptdesktop.sh
+
+./argumento.sh primeiro segundo 
+
+
+
+  /********************************************************************************************************************
+  *                                                           REFERENCIAS                                             *
+  *https://www.udemy.com/course/conceitos-de-programacao-em-shell-script/learn/lecture/13868746#overview              *
+  *https://www.vivaolinux.com.br/dica/Colocando-script-na-inicializacao-do-Linux-(Ubuntu-Debian)                      *
+  ********************************************************************************************************************/

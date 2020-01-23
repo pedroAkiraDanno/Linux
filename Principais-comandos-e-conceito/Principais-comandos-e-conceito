@@ -1,2 +1,59 @@
 Principais-comandos-e-conceito
 
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+LPI - Exame 101-500 - topico 103: Comandos GNU e UNIX
+
+comandos: 
+
+
+$echo $SHELL 
+desc: mostra o shell utilizado 
+saida: /bin/bash
+
+
+
+$type echo 
+desc: mostra se o comando é parte do shell ou nao 
+saida: echo is a shell builtin
+ 
+
+
+$echo PATH 
+desc: executar e consultar os programas externos do linux 
+saida: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+
+
+$cd 
+desc: mudar de diretorio, change diretory 
+saida:
+
+
+
+$./
+desc: neste diretorio
+
+
+
+$/home/jarvis/Exercicios
+desc: caminho absoluto 
+
+
+$./Script_Exemplo.sh
+caminho relativo
+
+ 
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+

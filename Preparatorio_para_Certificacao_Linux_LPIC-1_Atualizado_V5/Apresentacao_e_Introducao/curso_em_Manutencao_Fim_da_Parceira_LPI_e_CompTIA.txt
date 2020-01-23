@@ -5,6 +5,17 @@
 # AUTOR     : Pedro Akira Danno Lima             #
 #************************************************#
 
+ssh   tcp    127.0.0.1 2222  10.0.2.15   22
+
+ssh jarvis@127.0.0.1 -p 2222
+ssh root@127.0.0.1 -p 2222
+
+
+
+
+
+
+
 
 
 LPIC-1 e CompTIA Linux+
@@ -17,6 +28,20 @@ CompTIA elaborou um exame totalmente independente da LPI
 exames antigos:LX0-103 e LX0-104
 
 Novo exame compTIA Linux+: XK0-004
+
+
+
+
+
+
+tar zxvf arquivos-aula.tgz
+
+
+
+
+
+
+
 
 
 

@@ -152,6 +152,10 @@ tem que falar o caminho completo ou ./ no diretorio que se controla
 
 
 
+caminho absoluto 
+
+
+caminho relatovo 
 
 
 

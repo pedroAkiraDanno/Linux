@@ -109,7 +109,7 @@ permanente
 alias github='cat -n Desktop/Pedro/github_locations.txt'
 
 #alias author:PedroAkira to Area de Trabalho
-alias github='cat -n Desktop/Pedro/github_locations.txt'
+alias github='cat -n /home/jarvis/Desktop/Pedro/github_locations.txt'
 
 
 

@@ -264,6 +264,45 @@ saida:
 
 
 
+$uname
+desc: retorna o nome do SO. Linux
+saida: Linux
+
+
+
+$uname -a
+desc: print system information. impreme informacoes do sistema. mostra todos 
+saida: Linux srv02-Xubuntu 5.0.0-38-generic #41-Ubuntu SMP Tue Dec 3 00:27:35 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+
+
+
+$uname -r
+desc: versao do kernel
+saida: 
+
+
+
+$alias
+desc: mostra os alias  
+saida: alias l='ls -CF' alias la='ls -A' alias ll='ls -alF' alias ls='ls --color=auto'
+
+
+
+$alias home='cd /home/jarvis/"Área de Trabalho"'
+desc: criar um alais. Temporario
+saida:
+
+
+$vim .bashrc
+desc: alias permanente
+	  #alias author:PedroAkira to file:github_locations.txt
+      alias github='cat -n Desktop/Pedro/github_locations.txt'
+saida:
+
+
+      
+
+
 
 
 

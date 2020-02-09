@@ -240,7 +240,9 @@ saida:
 
 
 $info ls 
-info 
+desc: info
+saida: 
+ 
 
 
 

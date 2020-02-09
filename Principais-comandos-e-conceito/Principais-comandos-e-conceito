@@ -142,8 +142,123 @@ saida: /home/jarvis
 
 $echo ~jarvis
 desc: mostra o home do usuario tambem 
+saida:
 
 
+
+$clear ; date ; ls 
+desc: Comandos Sequenciais, executa em sequencia nao importa se o comando anterior foi com sucesso ou nao 
+saida:
+
+
+
+$ls -lath && echo Linux
+desc: se o primerio foi executado com sucesso, ele executa o segundo tambem 
+saida:
+
+
+$ls -lath || echo Linux
+desc: So executa o segundo comando se o primeiro nao funcionou. se o primeiro executar ele executa so o primeiro.
+saida:
+
+
+
+$cat .bash_history
+desc: arquivo .bash_history. mostra os ultimos comandos. Cada usuario em um arquivo proprio de history. Esse arquivo é gravado toda vez que é fechado a sessao 
+saida: 
+
+$!!
+desc: Repete o ultimo comando que realizou 
+saida:
+
+
+$!10
+desc: !numero. Executa o numero da linha que esta o comando do history 
+saida: 
+
+
+
+$!uname 
+desc: executa o ultimo comando com essa string 
+saida: 
+
+
+
+$history -c 
+desc: limpa o arquivo do history 
+saida:
+
+
+
+$set | grep HISTFILE
+desc: mostra o arquivo de history e tamanho
+saida: 
+
+
+
+$ctrl r 
+desc: busca um comando no seu history 
+saida:
+
+
+
+$shift 
+desc: recurso de autocompletar 
+saida: 
+
+
+
+$tab duas vezes 
+desc: mostra os comando com o começo daquela letra 
+saida: 
+
+
+$history | grep shut*
+desc: busca comando no history
+saida:
+
+
+
+$man ls 
+desc: todos comandos tem o manual de referencia e ajuda. acessado pelo man. Man nome do comando ou arquivo de configuração 
+	  manual de referencia. 
+	  *para comandos externos.
+	  comandos inteiros nao tem o manual 
+saida: 
+
+
+
+$man bash 
+desc: *comandos inteiros. tem que consultar o manual do bash. referenicas para comandos inernos 
+saida: 
+
+
+$type cd - interno . type cp - externo type cd - interno, faz parte do bash 
+desc: 
+saida:
+
+
+
+$info ls 
+info 
+
+
+
+$man -k "system information"
+desc: tras uma referencia dos comandos que tenham system information. Ele tem uma pequena base de dados de referencias 
+saida: 
+
+
+
+$whatis ls
+desc: consultar man -k, o que é esse comando. whatis tar. descrição do comando 
+saida: 
+
+
+
+$aproposo "updade system"
+desc: faz a busca de acordo com a descricao, te retorna os comandos possiveis. igual o man -k
+saida: 
 
 
 

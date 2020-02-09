@@ -80,7 +80,122 @@ clear ; date ; ls
 -nao importa se o comando anterior foi com sucesso ou nao 
 
 
+ls -lath && echo Linux
+-se o primerio foi executado com sucesso, ele executa o segundo tambem 
 
+
+
+ls -lath || echo Linux
+-so executa o segundo comando se o primeiro nao funcionou
+-se o primeiro executar ele executa so o primeiro 
+
+
+
+
+funcoes do history 
+history
+-mostra doso os ultimos comandos 
+-cada usuario em um arquivo proprio de history 
+
+
+!!
+-repete o ultimo comando que realizou 
+
+
+
+!numero 
+executa o numero da linha que esta o comando do history 
+
+
+!uname 
+executa o ultimo comando com essa string 
+
+
+history -c 
+limpa o arquivo do history 
+
+
+set | grep HISTFILE
+*mostra o arquivo de history e tamanho
+
+cat .bash_history 
+
+
+esse arquivo é gravado toda vez que é fechado a sessao 
+
+
+ctrl r 
+busca um comando no seu history 
+
+
+shift 
+recurso de autocompletar 
+
+tab duas vezes 
+mostra os comando com o começo daquela letra 
+
+
+
+
+history | grep shut
+
+
+executar script 
+./
+se tiver no local 
+so colocar o nome do script, tambem da certo 
+
+
+
+
+todos comandos tem o manual de referencia e ajuda 
+acessado pelo man 
+man nome do comando ou arquivo de configuração 
+man ls 
+manual de referencia 
+para comandos externos 
+comandos inteiros nao tem o manual 
+
+
+type 
+
+
+comandos inteiros 
+tem que consultar o manual do bash 
+man bash 
+referenicas para comandos inernos 
+
+type cd - intero 
+type cp - externo 
+type cd - interno, faz parte do bash 
+
+
+
+info 
+é um pouco reduzido 
+info ls 
+info cd 
+
+
+man -k "system information"
+tras uma referencia dos comandos que tenham system information 
+
+
+man -k "update system"
+ele tem uma pequena base de dados de referencias 
+
+
+
+whatis ls 
+consultar man -k, o que é esse comando 
+whatis tar 
+descrição do comando 
+
+
+apropso 
+aproposo "updade system"
+faz a busca de acordo com a descricao, te retorna os comandos possiveis 
+igual o man -k
 
 
 

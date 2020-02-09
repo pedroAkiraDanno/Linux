@@ -33,16 +33,116 @@ saida:
 
 $./
 desc: neste diretorio
-
+saida:
 
 
 $/home/jarvis/Exercicios
 desc: caminho absoluto 
-
+saida:
 
 
 $./Script_Exemplo.sh
-caminho relativo
+desc: caminho relativo
+saida:
+
+
+$VAR=linux
+desc: declarar uma variavel de ambiente localmente, so visivel nesssa são do shell, *sem espaço, 
+saida:
+
+
+
+$echo $VAR
+desc: exibe o valor da variavel 
+saida: linux 
+
+
+
+$export VAR ou $export VARIAVEL=valor 
+*agora todos os shells enxergam a variavel,  esta global
+
+
+
+*o shell/terminal é um processo, quando executa um programa .sh ele é executado 
+depois volta o shell normal, o .sh é filho do processo shell 
+
+
+
+$bash
+desc: executa/abre um novo bash, um novo processo 
+saida:
+
+
+
+$set | less 
+desc: mostra variaveis locais e exportadas, no bash 
+saida: 
+
+
+
+$env | less
+desc: mostra apenas variaveis globais, comando externo type env, so enxerga as vars exportadas 
+saida: 
+
+
+
+$env TESTE=windowns ./script_var 
+desc: so executa o valor windons na executação do comando
+
+
+
+$unset TESTE
+desc: remover uma variavel 
+saida: 
+
+
+
+Principais Variáveis de Ambiente/variaveis pre-definidas
+HISTFILE- onde esta o arquivo de historico, para que possa consultar depois, saida: /home/jarvis/.bash_history
+HISTFILESIZE=quantidade maxima, tamanho
+HISTSIZE= tamanho do arquivo 
+HOME- o home do usuario local, em uso, o valor muda conforme sesao e usuario logado
+HOSTNAME-linux 
+LOGNAME- usuario que fez login nessa sessao 
+PWD-qual diretorio local, qual o diretorio que esta agora 
+OLDPWD: Diretório anterior
+SHELL-o shell que esta usando 
+TERM- o terminal que esta usando xterm - tty
+USER- nome do usuario, igual ao LOGNAME 
+PATH: Diretórios em que o Linux irá procurar por arquivos executáveis
+
+
+
+Variaveis definidas dinamicamente pelo shell
+desc: sao identificadas com um $ no começo 
+
+
+$echo $$
+desc: mostra o pid do processo atual, no caso no shell
+saida:
+
+
+
+$echo $!
+desc: mostra o pid do ultimo processo em backgrous
+saida: 
+
+
+
+echo $?
+desc: mostra o ultimo comando, executado com sucesso retorna 0, erro - diferente de 0, pode ser 1 ou 2 
+saida:
+
+
+$echo ~
+desc: mostra o home do usuario 
+saida: /home/jarvis
+
+
+
+$echo ~jarvis
+desc: mostra o home do usuario tambem 
+
 
 
 

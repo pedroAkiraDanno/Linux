@@ -95,7 +95,7 @@ echo $NOMEVARIAVLE
 
 
 export NOMEVARIAVEL
-*agora todos os shells enxergao a variavel,  esta global
+*agora todos os shells enxergam a variavel,  esta global
 
 
 *o shell/terminal é um processo, quando executa um programa .sh ele é executado 
@@ -119,7 +119,7 @@ set | less
 
 
 env | less
-*mostra apenas variaveis globais, comando externo type env, so encherga as vars exportadas 
+*mostra apenas variaveis globais, comando externo type env, so enxerga as vars exportadas 
 $env TESTE=windowns ./script_var 
 *so executa o valor windons na executação do comando
 

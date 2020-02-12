@@ -310,6 +310,36 @@ saida: /bin/echo
 
 
 
+#quoting
+$ echo "$TESTE" ; echo '$TESTE' ; echo "pedro           akira" ; echo pedro    akira
+desc: 	no bash tem uma serie de caracteres especiais
+		echo $
+		proteger e impedir de interpretar as variáveis 
+		echo *
+		* -> todos. significa todos os diretórios onde esta, local
+		echo "*" -> impede a interpretação do * -> ele imprime o *
+		echo '*'-> protege e impede a interpretação dos caracteres especiais 
+		echo \* -> protege apenas o caractere seguinte, só um caráter 
+		diferença entre aspas "" e '' 
+		"" -> protege todos os caracteres especiais exceto os: $  ` /
+		'' -> protege todos os caracteres 
+		declarando a variáveis 
+		TESTE=curso
+		echo $TESTE
+		echo "$TESTE"
+saida:
+
+
+
+
+
+#filtros_em_textos_e_arquivos
+
+
+
+
+
+
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
 

@@ -20,7 +20,8 @@ saida: echo is a shell builtin
 
 
 $echo PATH 
-desc: executar e consultar os programas externos do linux 
+desc: executar e consultar os programas externos do linux.  
+      Local onde o bash, vai buscar o binario, e comandos
 saida: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 
@@ -301,7 +302,10 @@ saida:
 
 
       
-
+$which echo 
+desc: procurar algum arquivo, que estao incluidos no $PATH, 
+	  ferramenta de busca. Localiza um comando. onde esta o comando echo, localizar qualquer arquivo que esteja no cominho $PATH 
+saida: /bin/echo
 
 
 

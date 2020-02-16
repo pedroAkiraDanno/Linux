@@ -75,6 +75,85 @@ zcat
 103.2_Aplicando_Filtros_a_Textos_e_Arquivos-cat_head_tail_sort_less_wc
 
 
+cat arquivo.txt 
+#le um arquivo de texto 
+
+cat -n 
+mostra todas as linhas inumeradas
+
+cat -b 
+inumera apenas as linhas nao brancas
+
+
+cat -s
+inumera, quando tem mais de uma linha em branco, trasforma em apenas uma linha em branco 
+
+
+cat -A 
+mostra caracteres especias 
+
+
+cat --help 
+#opcoes 
+
+mais detalhes 
+man cat 
+
+
+
+
+
+tac
+o inverso de cat 
+imprime a ultima linha para a primeira 
+
+
+head 
+mostra o cabeçalho do arquivo 
+as primeiras linhas
+por padrao alguns linux mostrar as 10 primeiras linhas
+outro 5 linhas 
+head arquivolongo.txt
+#10 primeiras linhas 
+head -n2 arquivolongo.txt
+mostra as 2 primeiras linhas ou head -2 arquivolongo.txt
+pode omitir o -n
+
+
+head -c50 arquivolongo.txt
+mostra os primeiros 50 bytes 
+
+
+
+
+tail 
+mostra as ultimas 10 linhas ou 5 linhas dependendo do linux
+tail -n10 arquivolongo.txt
+
+tail -f arquivolongo.txt
+esperando alguma saida
+se algo por escrito nesse arquivo ele vai mostrar
+#bom pra ver log
+tail -n5 -f arquivo.txt 
+
+
+echo "pedro" >> alunos.txt
+redirecionamento 
+joga a saida do echo para o final do arquivo 
+
+
+
+
+
+
+comando para fazer a paginação
+less - é o melhoramento do more
+tem mais opcoes 
+
+
+
+
+
 
 
 
@@ -99,10 +178,6 @@ zcat
 
 
 
-
---------------------------------------------------------------------------------------------------------------------------------------------------------------
-exercicios 
---------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
 

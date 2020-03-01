@@ -78,6 +78,7 @@ zcat
 cat arquivo.txt 
 #le um arquivo de texto 
 
+
 cat -n 
 mostra todas as linhas inumeradas
 

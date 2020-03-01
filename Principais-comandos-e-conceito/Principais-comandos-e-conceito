@@ -335,6 +335,48 @@ saida:
 
 #filtros_em_textos_e_arquivos_exibir_conteudo_arquivo
 
+$cat arquivo.txt 
+desc: le um arquivo de texto 
+saida:
+
+
+
+$cat -n 
+desc: mostra todas as linhas inumeradas
+saida:
+
+
+
+$cat -b 
+desc: inumera apenas as linhas nao brancas
+saida:
+
+
+
+$cat -s
+desc: inumera, quando tem mais de uma linha em branco, trasforma em apenas uma linha em branco 
+saida:
+
+
+
+$cat -A 
+desc: mostra caracteres especias 
+saida: Ana$
+
+
+$cat --help 
+desc: opcoes do comando car
+saida:
+
+
+$man cat 
+desc: mais detalhes sobre o comando cat
+saida: 
+
+
+
+
+
 
 
 

@@ -463,27 +463,67 @@ desc: mostra apenas as linhas
 saida:
 
 
-wc -w alunos.txt
-palavras, w de word
 
-wc -c quantidade de caracteres 
--c ou --bytes quandidade de bystes 
--m ou --chars quantidade de caracteres
+$wc -w alunos.txt
+desc: palavras, w de word
+saida:
 
 
-wc * 
-roda o comando para todos os arquivos do diretorio atual 
-
-
-
-cat alunos | wc -l 
-
-tail -n10 alunos.txt | wc
+$wc -c quantidade de caracteres 
+desc: -c ou --bytes quandidade de bystes 
+      -m ou --chars quantidade de caracteres
+saida:      
 
 
 
+$wc * 
+desc: roda o comando para todos os arquivos do diretorio atual 
+saida: 
 
 
+
+$cat alunos | wc -l 
+desc: 
+saida: 
+
+
+
+$tail -n10 alunos.txt | wc
+desc: 
+saida: 
+
+
+
+
+$nl alunoas.txt
+desc: igual o comando cat -b, exibe as linhas enumetadas sem enumetar as linhas em branco
+saida:  1	Andre Gonçalves
+        2	Paulo Freitas
+        3	Maria Antonieto Sousa
+
+
+
+$sort alunos.txt
+desc: ordena o arquivo em ordem albatica 
+      colocando as linhas em branco no comeco 
+saida:
+
+
+$sort -r alunox.txt
+desc: ordena em ordem reversa 
+saida:
+
+
+
+$sort -k2 alunox.txt
+desc: ordena apartir do segundo campo 
+saida:
+
+
+
+$cat alunox.txt Z sort -r         
+desc: 
+saida:
 
 
 

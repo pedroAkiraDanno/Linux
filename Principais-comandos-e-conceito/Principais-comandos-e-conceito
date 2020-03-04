@@ -381,6 +381,30 @@ saida:
 
 
 
+$head arquivolongo.txt
+desc: mostra o cabeçalho do arquivo 
+	  as primeiras linhas
+      por padrao alguns linux mostrar as 10 primeiras linhas
+      outros linux podem mostras as 5 primeiras linhas,
+      #10 primeiras linhas
+saida:
+
+
+
+$head -n2 arquivolongo.txt
+desc: mostra as 2 primeiras linhas ou head -2 arquivolongo.txt
+      pode omitir o -n, head 2 arquivo.txt
+saida:
+
+
+
+$head -c50 arquivolongo.txt
+desc: mostra os primeiros 50 bytes 
+saida:
+
+
+
+
 
 
 

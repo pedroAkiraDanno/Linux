@@ -404,6 +404,25 @@ saida:
 
 
 
+$tail arquivo.txt
+desc: mostra as ultimas 10 linhas ou 5 linhas dependendo do linux
+saida:
+
+
+
+$tail -n10 arquivolongo.txt
+desc: mostras as 5 ultimas linhas, pode omitir o -n, head 2 arquivo.txt
+saida:
+
+
+
+$tail -f arquivolongo.txt
+desc: esperando alguma saida
+      se algo por escrito nesse arquivo ele vai mostrar
+      #bom pra ver log
+      tail -n5 -f arquivo.txt 
+
+
 
 
 

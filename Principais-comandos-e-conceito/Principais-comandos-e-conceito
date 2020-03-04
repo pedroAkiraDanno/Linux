@@ -375,6 +375,10 @@ saida:
 
 
 
+$tac teste.txt
+desc: o inverso de cat, imprime a ultima linha para a primeira 
+saida:
+
 
 
 

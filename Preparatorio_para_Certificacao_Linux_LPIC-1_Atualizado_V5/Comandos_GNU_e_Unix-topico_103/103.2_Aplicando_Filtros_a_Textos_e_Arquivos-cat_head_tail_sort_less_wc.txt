@@ -131,6 +131,8 @@ tail
 mostra as ultimas 10 linhas ou 5 linhas dependendo do linux
 tail -n10 arquivolongo.txt
 
+
+
 tail -f arquivolongo.txt
 esperando alguma saida
 se algo por escrito nesse arquivo ele vai mostrar
@@ -150,6 +152,95 @@ joga a saida do echo para o final do arquivo
 comando para fazer a paginação
 less - é o melhoramento do more
 tem mais opcoes 
+/palavra 
+procura a palavra 
+n de novo, n de next 
+N busca para tras 
+crtl g, mostra info dos arquivos e linh
+cat arquivo | less, com o | pega a saida do primeiro comando e joga como entrada para o segundo comando 
+
+
+
+
+
+wc alunos.txt
+mostra a quantidades de linhas, palavras e bytes
+
+wc -l alunos.txt
+mostra apenas as linhas
+
+wc -w alunos.txt
+palavras, w de word
+
+wc -c quantidade de caracteres 
+-c ou --bytes quandidade de bystes 
+-m ou --chars quantidade de caracteres
+
+
+wc * 
+roda o comando para todos os arquivos do diretorio atual 
+
+
+
+cat alunos | wc -l 
+
+tail -n10 alunos.txt | wc
+
+
+
+
+nl alunoas.txt
+= cat -b 
+
+
+
+
+sort alunos.txt
+ordena o arquivo em ordem albatica 
+colocando as linhas em branco no comeco 
+
+sort -r alunox.txt
+ordena em ordem reversa 
+
+
+sort -k2 alunox.txt
+ordena apartir do segundo campo 
+
+cat alunox.txt Z sort -r 
+
+
+
+
+uniq alunos.txt
+mostrar entradas unicas no arquivo
+mostra apenas uma vez 
+ana e ana, mostra ana uma unica vez 
+porem tem que estar uma palavra em baixo da outra, para resolver isso pode usar o sort 
+que ordena e tira as linhas em branco 
+sort alunos.txt | uniq 
+
+uniq -d alunos.txt 
+mostra apenas as linhas duplicatas 
+
+sort alunox.txt | uniq -c 
+enumera a quantidade de ocorrencia das palavras repetidas 
+
+
+
+
+od alunos.txt
+exibe o texto em formato octal
+octal damp 
+
+od -tx alunox.txt
+mostra em hexa
+
+od --help 
+mostra em varios opcoes 
+
+
+
+
 
 
 

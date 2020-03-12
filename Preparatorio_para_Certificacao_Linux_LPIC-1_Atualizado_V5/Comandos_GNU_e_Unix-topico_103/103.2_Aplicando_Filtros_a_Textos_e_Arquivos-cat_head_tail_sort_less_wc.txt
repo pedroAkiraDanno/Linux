@@ -239,6 +239,37 @@ od --help
 mostra em varios opcoes 
 
 
+join 
+juntao de arquivos de texot atraves de um indece 
+cat codigo alunos.txt
+cat notas-aluno.txt
+join codidoalunos.txt notas-alunos.txt
+join -j2 codigo-alunos.txt notas-aluno.txt
+comando bem limitado 
+
+
+linha de um arquivo com outro arquivo, ele nao usa indice 
+linha 1 com linha 1, linha 2 com linha 2 juntando os dois arquivos
+
+
+
+
+
+
+split 
+divide um arquivo em diverosos arquivos
+split -l20 arquivolongo.txt
+-l20, a cada 20 linhas cria um arquiv
+dividiu o arquivo por linhas 
+
+
+split -l20 arquivolongo.txt novo_arquivo_
+nome do arquivo que ele vai criar 
+
+
+split -b100 arquivo.txt novo_arquivo_
+cada arquivo com 100bytes 
+
 
 
 

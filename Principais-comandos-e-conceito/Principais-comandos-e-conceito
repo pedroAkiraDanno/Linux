@@ -826,6 +826,178 @@ saida: test.txt: SUCESSO
 
 
 
+$ estrutura de diretorios do linux
+  comeca sermpre pelo /, raiz root 
+  hierarquia 
+  /root -> o home do usuario root 
+  caminho absoluto 
+  caminho relativo sem o / no comeco 
+
+
+
+$cd
+desc: cd -> change diretor, mudar de diretorio 
+      cd .. voltar um diretorio 
+      cd nomearquivo
+      cd - voltar para o diretorio anteriomente, antes de me mudar 
+      cd ~ home do usuario no momento, usuario local 
+      cd ../..
+saida:
+
+
+
+$ls -> listar o conteudo/arquivos do diretorio 
+desc: ls 
+      ls -a arquivos ocultos, arquivos q comecam com .
+      ls -l -> lista detalhada dos arquivos 
+      ls -a - mostra o . e o .. , o . é o diretorio atual, e o .. diretorio anterior e todos os diretorios atuais sem detalhe 
+      referenciar o diretorio atual . 
+      cada campo no ls:
+      primeiro conjunto de letras (determina a permissao e tipo de arquivo) d diretorio, quando n tem nada é um arquivo, l link
+      segundo numero, quantos raid links sao apotandos para o arquivo 
+      usuario , grupo
+      tamanho do aruqivo em bytes 
+      data e hora da ultima alteração 
+      nome do arquivo 
+saida:      
+
+
+
+$ls -lh
+desc: h human mostra o tamanho do arquivo em kili,mega,giga
+saida:
+
+
+
+$ls -lR
+desc: recursivo, entra em cada diretorio e viu o que tinha da dentro 
+saida: 
+
+
+$ conjuntos de caracteres especias: usado no ls,cp,mv
+desc: * -> mostra tudo 
+      ls -lath AULA1*, todos q tem aula AULA1 e tudo depois disso 
+      ? -> uma letra qualquer depois 
+      ls -l AULA1? depois so uma aula
+      ls -l AULA?0 qualquer ? e depois 0
+      lista de caracteres q aparecam 
+      ls -l AULA[123] uma lista, um caracter por vez 
+      lista de caracteres q n aparesam 
+      ! -> para negar 
+      ls -l AULA[!123]
+      listas com range 
+      ls -l AULA[1-5]
+      1 ao 5 
+      ou negar 
+      ls -l AULA[!1-5]
+      ls -l AULA[1-5]?
+      a 1 ao 5 e que tenha um caracter depois 
+      sequencia de strings q quero usando a chaves
+      ls -l aula{10,20,30}
+      ls -l A{ula,ULA}
+saida:
+
+
+
+$file nomedoaruqivo
+desc: no linux nao costuma mto utilizar a extensao do arquivo 
+      file nomedoaruqivo
+      analisa o arquivo 
+      e fala que tipo é o arquivo e explica a extensao do arquivo
+saida:
+
+
+
+$cp -opcoes origem destino
+desc: cp alunos.txt /tmp
+saida:
+
+
+
+$cp -v aluno* /tmp
+desc: comando -v verbose detalhes, 
+      muitos comandos no linux tem o -v, mostra os detalhes
+      o passo a passo da operacao 
+saida:
+
+
+
+$cp -v aluno* /tmp
+desc: comando -v verbose detalhes, 
+      muitos comandos no linux tem o -v, mostra os detalhes
+      o passo a passo da operacao 
+saida:
+
+
+
+$cp -i alunos* /tmp
+desc: pergunta se um arquivo pode ser sobreescrito, mto bom 
+saida: 
+
+
+
+$cp nao copia diretorio 
+desc: para copiar diretorio usar o -r
+      cp -r diretorio /tmp 
+      -r copia recursivamente, copia o diretorio e o todo o conteudo dele 
+      cp -rv exercicios /tmp
+      quando copia um arquivo ele muda as atualizacoes de modificacao 
+      e usuario que copiou vira o usuario do arquivo 
+saida:
+
+
+
+$cp -p exercicio /tmp
+desc: prezervar as caracristicas do arquivo
+      mandei a data de modificaçao usuario e grupo
+saida:
+
+
+
+$renomear um arquivo
+desc: copiado aula1 para um outro arquivo chamado aula2
+      cp aula1 aula2      
+saida:
+
+
+
+
+$mv mesmas opcoes do cp 
+desc: renomear um arquivo 
+      mv
+      mv remove o arquivo com nome antigo e coloca o novo nome
+      mv aula1 aula2 
+      movendo de um nome para o outro 
+      remonomear um arquivo, melhor usar o mv 
+saida:
+
+
+
+
+$touch 
+desc: criar um arquivo 
+      ou 
+      com o touch consegue mudar a ultima data de alteracao ou acesso 
+      touch nome-arquivo-ja-existente
+      atualiza a data de ultima modificacao
+      touch -a nome-arquivo
+      altera a data da ultimo acesso 
+      touch -m nome-arquivo date da ultimo modificaao 
+      touch -t anomesdiahora nomearquivo
+      touch -t 201803121535
+      todo arquivo no linux 
+      tem a data de modificacao/alteracao e a data do ultimo acesso
+      ls -l 
+      mostra a data da ultima alteracao 
+saida: 
+
+
+
+
+
+
+
+
 
 -----------------------------------------------------------------------------------------------------------------------------------------------
 

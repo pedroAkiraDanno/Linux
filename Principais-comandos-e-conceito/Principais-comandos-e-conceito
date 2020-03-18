@@ -994,6 +994,60 @@ saida:
 
 
 
+$rm aula 10 
+desc: perguntar antes de apagar 
+      rm -i aula10
+      rm -v aula
+      -verbose 
+      detalhe de cada remocao 
+      remover diretorio 
+      rm -r
+      -r recursivo 
+      rm -r diretorio 
+      rmdir diretorio 
+      so pode ser removido em diretorios vazios 
+saida:
+
+
+
+
+$mkdir linux
+desc: criar um diretorio 
+      mkdir linux/teste - da para criar pq so sao 2
+      mkdir curso/LPI/VERSAO da erro pq ele nao conseguie criar subdiretorios 
+      mkdir -p curso/LPI/VERSAO 
+      ou 
+      mkdir --parents curso/LPI/VERSAO 
+      -p podecriar subdiretorios 
+saida:
+
+
+
+$rmdir Linux
+desc: rmdir -p Linux/Ubuntu
+      remove essa estrutura se todos tiverem vazios
+      remove a arvore, o caminho da arvore
+saida:      
+
+
+
+$find 
+desc: procurar arquivos e diretorios 
+      find onde-quer-procurar que-tipo-de-entrada-vai-dar aula
+      find /home -name Aula10
+      find /home -name aula*
+      find /home -user jarvis -name aula10
+      find ./ -ctime -1
+      todos os arquivos que foram executados um dia antes
+      ./ no meu diretorio atual para frente, todos os arquivos apartir do 
+      meu diretorio 
+      -1 um dia anterior
+saida:      
+
+
+
+
+
 
 
 

@@ -75,8 +75,97 @@ file globbing
 
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------
-103.3_Perform basic file management-rm_mkdir_rmdir_find
+103.3_Perform basic file management-tar_gzip_bzip2_xz
 
+
+comandos para agrupar e comprimir arquivos
+mover arquivos de um lugar para o outro e backup
+
+tar c
+criar um arquivo tar 
+tar x extrair
+tar -t listar o conteudo do arquivo tar
+
+tar cf backup.tar
+c-criar
+f definir nome do arquivo
+p preservar as permissoes
+v verbose 
+
+tar cpvf backup.tar nome-arquivo*
+
+ou tudo 
+
+tar cpvf backup.tar *
+
+
+tar -tf back.tar
+listar conteudo do agrupamento 
+
+
+gzip
+bzip
+zip
+bzip2
+xz
+cada tipo de compactasao 
+é melhor para cada um 
+
+
+
+compactar 
+gzip backup.tar
+compactacao normal, ele some com o arquivo original ,.tar
+e transforma em tar.gzip
+
+descompactar 
+unzip
+gunzip back.tar.gz 
+gzip -d 
+-d descompress
+
+
+gzip -k backup.tar 
+tem o arquivo original
+e o arquivo compactado 
+mander o arquivo original e arquivo compactado 
+
+
+
+bzip -k backup.tar
+
+
+descomprar bzip 
+bzip2 -f 
+unbzip
+
+
+descompactar
+gzip - gunzip / gzip -d
+bzip2 - bzipp2 -d
+
+
+gzip novo_teste-a*
+
+
+
+tar cvpf back.tar novo*
+so agrupando 
+
+se quiser ja compactar no tar usa:
+tar zcvpf backp.tgz novo
+.tgz nome padrao para z 
+z - gzip 
+
+J -> xe
+
+
+j -> gzip2
+
+
+
+tar xJS
+descopactar
 
 
 

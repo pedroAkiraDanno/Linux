@@ -235,7 +235,7 @@ saida:
 
 
 $type cd - interno . type cp - externo type cd - interno, faz parte do bash 
-desc: 
+desc: comando para ver qual comando faz parte do bash ou n. interno = bash, externo = nao bash 
 saida:
 
 

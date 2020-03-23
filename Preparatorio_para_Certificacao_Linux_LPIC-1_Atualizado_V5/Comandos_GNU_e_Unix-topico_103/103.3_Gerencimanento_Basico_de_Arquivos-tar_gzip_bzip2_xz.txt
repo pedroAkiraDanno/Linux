@@ -348,10 +348,75 @@ archivename.z04
 https://www.youtube.com/watch?v=iHoFc1Ynw-0
 tar
 
+tar empacotar arquivos
+n comprime arquivos 
+so junta arquivos em um so arquivo 
+
+tar [parametro] [nome_do_arquivo_tar] [arquivo-de-origem]
+
+opcoes:
+-c: criar um novo arquivo tar
+-t exibe o conteudo de um arquivo tar
+-p mantem as permissoes originais do arquivo
+-r: adiciona arquivos a um arquivo tar existente
+-f permite especificar o arquivo tar a ser utilizado
+-v exibe detalhes da operacoa
+-x extrai arquivo de um arquivo tar existente
+-x comprime o arquivo tar resultnte com o gzip
+-C especifica o direotrio dos arquivos a serem armazenados
+
+
+exs:
+tar -cf plantar.tar bromelia.txt orquidia.txt
+
+add mais um arquivo 
+tar -rf plantar.tar araceas.txt
+
+excluir um arquivo 
+tar -f plantas.tar --delete araceas.txt
+ou -d
 
 
 
+ver conteudo
+tar -tg plantas
 
+
+acrescentar arquivo 
+tar -rf plantas.tar araceas.txt
+r acrescentar
+
+
+extrarir os arquivos de volta, do tar 
+tar -xvf plantas.tar 
+-x extrect 
+
+
+extrarir um arquivo expecifico so 
+tar -xvf plantar.tar bromelia.txt
+
+
+como tar nao faz compactacao pode combinar com:
+TAR + gzip ou bzip2
+-o comando tar apenas empacota arquivos, mas n os comprime
+-para usar tar com gzip - parametro -z. resultado tera a extensao tar.gz
+-para usar tar com bzip2 basta acrescentar parametro -j. O arquivo resultante extensao .tar.bz2
+
+
+
+criar um tar compactado 
+tar -cvzf plantas.tar.gz *
+
+extrarir tar compactado 
+tar -xzvf plantas.tar.gz
+
+
+
+criar tar compactado
+tar -cvjf plantas.tar.bz2 *
+
+extrair tar compactado 
+tar -xjvf plantas.tar.bz2
 
 
 

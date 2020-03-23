@@ -164,8 +164,192 @@ j -> gzip2
 
 
 
+
+utilizando tar 
 tar xJS
 descopactar
+
+
+
+z -gzip
+j bzip2
+J - xe
+
+descompactar x
+
+
+
+
+
+
+
+
+
+
+
+
+
+Compactando e descompactando arquivos com zip no Linux
+https://www.youtube.com/watch?v=b8TulLJKp8Q
+
+utilitario zip 
+
+
+apt-get install zip
+
+
+zip bkp-zip nome-arquivo-compactar
+
+
+vizualizar o conteudo do arquivo 
+zipinfo nome-arquivo-zipado
+
+
+adicionar mais arquivos desse arquivo ja zipado
+zip bkp-zip arquivo-q-quer-acrescentar
+
+
+
+excluir um arquivo no zip
+zip arq-zip -d nome-arquico-q-quer-excluir
+
+
+
+
+#incluir todos exceto algum arquivo
+zip test * -x *.zip
+-x exclude
+
+
+
+zipar um diretorio inteiro 
+zip -arq-doc -r ./Documentos 
+-r recursao
+
+
+nivel de compressao
+numero maximo é 9
+zip -arq-doc -r ./Documentos -9
+
+
+
+descompactar 
+unzip -l nome-arquivo-zip
+mostra o conteudo no arquivo zipado 
+
+unzip -v nome-arquivo-zip
+mostra mais informacoes 
+
+
+
+testar antes de descompactar 
+unzip -t arq-zip.zip
+-t 
+retorna OK
+
+
+
+descompactar
+unzip arq-zip.zip
+
+
+
+#jogar em outro diretorio 
+unzip arq-zip.zip -d ./Documentos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zip Command
+https://linuxize.com/post/how-to-zip-files-and-directories-in-linux/
+
+zip OPTIONS ARCHIVE_NAME FILES
+
+The zip utility is not installed by default in most Linux distributions, but you can easily install it using the package manager of your distribution
+
+Install Zip on Ubuntu and Debian
+sudo apt install zip
+
+Install Zip on CentOS and Fedora
+sudo yum install zip
+
+
+
+How to ZIP Files and Directories
+zip archivename.zip filename1 filename2 filename3
+
+output
+adding: filename1 (deflated 63%)
+adding: filename2 (stored 0%)
+adding: filename3 (deflated 38%)
+
+When specifying the Zip archive name if you omit the .zip extension it will be added automatically unless the archive name contains a dot. zip archivename.zip filename will create an archive with the same name as would zip archivename filename
+
+To suppress(nao mostrar output) the output of the zip command, use the -q option:
+zip -q archivename.zip filename1 filename2 filename3
+
+To create a Zip archive of a directory you would use:
+zip -r archivename.zip directory_name
+
+You can also add multiple files and directories in the same archive:
+zip -r archivename.zip directory_name1 directory_name2 file1 file1
+
+The zip command allows you to specify a compression level using number prefixed with a dash from 0 to 9. The default compression level is -6. When using -0, all files will be stored without compression. -9 will force the zip command to use an optimal compression for all files.
+
+For example, to use the compression level -9, you would type something like this:
+
+zip -9 -r archivename.zip directory_name
+
+
+Creating a Password Protected ZIP file
+If you have sensitive information that needs to be stored in the archive you can encrypt it using the -e option:
+zip -e  archivename.zip directory_name
+You will be prompted to enter and verify the archive password:
+output
+Enter password:
+Verify password:
+
+
+
+
+Creating Split Zip File
+Imagine you want to store the Zip archive on a file hosting service that has a file size upload limit of 1GB and your Zip archive is 5GB.
+
+You can create a new split Zip file using the -s option followed by specified size. The multiplier can be k (kilobytes), m (megabytes), g (gigabytes), or t (terabytes)
+
+zip -s 1g -r archivename.zip directory_name
+The command above will keep creating new archives in a set after it reaches the specified size limit.
+
+archivename.zip
+archivename.z01
+archivename.z02
+archivename.z03
+archivename.z04
+
+
+
+
+
+
+https://www.youtube.com/watch?v=iHoFc1Ynw-0
+tar
+
+
+
 
 
 

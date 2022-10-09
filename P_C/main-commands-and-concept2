@@ -1,0 +1,74 @@
+Main-commands-and-concept
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+NETWORK 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+LPI - Exam 101-500 - Topic 103: GNU and UNIX Commands
+
+
+      commands: 
+
+
+      $echo $SHELL 
+            desc: show  shell utility 
+            output: /bin/bash
+
+
+
+
+      $echo $PATH 
+            desc: run and query external linux programs.  
+                  Location where bash, will fetch the binary, and commands
+            output: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

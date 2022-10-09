@@ -1,0 +1,173 @@
+#************************************************#
+# OBJETIVO  : Linux-LPI						 	 #
+# CRIACAO   : 22-01-2020	                 	 #
+# VERSAO    : 1.0		                     	 #
+# AUTOR     : Pedro Akira Danno Lima             #
+#************************************************#
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+OS TOPICOS DOS EXAMES: 10 topicos.
+
+-Exame 101-500
+	-topico 101: arquitetura do sistema 
+	-topico 102: Instalação do linux e gerenciamento de pacotes
+	*topico 103: Comandos GNU e UNIX
+	-topico 104: Dispositivos, Sistemas de Arquivos e FHS
+
+
+
+-Exame 102-500
+	-topico 105: Shells e Shell Scripting 
+	-topico 106: interfaces de usuario e Desktops
+	-topico 107: taregas administrativas
+	-topico 108: servicos essenciais do sistema
+	-topico 109: Fundamentos de Redes 
+	-topico 110: Segurança 
+
+
+links:
+https://www.lpi.org/
+https://www.lpi.org/our-certifications/exam-101-objectives
+
+
+
+
+
+
+Topic 103: GNU and Unix Commands
+
+
+103.2 Process text streams using filters
+Weight: 2
+
+Description: Candidates should be able to apply filters to text streams.
+
+Key Knowledge Areas:
+
+Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package.
+The following is a partial list of the used files, terms and utilities:
+
+bzcat
+cat
+cut
+head
+less
+md5sum
+nl
+od
+paste
+sed
+sha256sum
+sha512sum
+sort
+split
+tail
+tr
+uniq
+wc
+xzcat
+zcat
+ 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+103.2_Aplicando_Filtros_a_Textos_e_Arquivos-checksums
+
+
+gerar e checar checksuns
+
+que sao hashs 
+
+ls lh xubuntu-18.04-desktop-amd64.iso
+iso do xubuntu 
+
+pode pegar esse arquivo e gerar um arquivo q represente 
+todo o conteudo dessa iso 
+
+gera uma sequencia de caracteres que sempre vai gerar esses caracterers 
+
+
+algoritmos:
+md5sum - mais antigo
+sha256sum - 
+sha512sum - melhorados, com certeza vai asegurar q gera um arquivo unico
+sha1sum - mais antigo
+*todos eles geram um arquivo hash do arquivo q passar
+
+
+$ sha256sum xubuntu-18.04-destip-amd64.iso 
+b5c0d15c719422503e4738b05a65e41cd3c70c689362b8552962650c0b847af0  xubuntu-18.04-destip-amd64.iso 
+
+se algum byte for perdido na trasmissao ou alterado 
+a sequencia de caracteres vai ser alterada 
+
+download n foi corrombido ou hackeado 
+
+gero um hash na origem e checo se é o mesmo no destino 
+
+
+$sha512sum xubuntu-18.04-destip-amd64.iso
+
+quantidade de bits q ele gera
+256-bits
+512-bits - ainda mais seguranca 
+
+
+usa mto se faz downloads de isos, ou arquivos grandes 
+
+
+site da isos 
+tem um arquivo chamado SHA256SUMS
+onde contem todos os chekssuns dos arquios isos
+
+
+ele olha os arquivos e ve se esta OK 
+sha256sum -c SHA256SUMS
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#********************************************************************************************************************#
+#                                                   REFERENCIAS      	                                         	 #
+#https://www.udemy.com/course/curso-online-certificacao-linux-lpic1-comptia/learn/lecture/17614470#overview			 #
+#********************************************************************************************************************#

@@ -1,0 +1,452 @@
+#************************************************#
+# OBJETIVO  : Linux-LPI						 	 #
+# CRIACAO   : 22-01-2020	                 	 #
+# VERSAO    : 1.0		                     	 #
+# AUTOR     : Pedro Akira Danno Lima             #
+#************************************************#
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+OS TOPICOS DOS EXAMES: 10 topicos.
+
+-Exame 101-500
+	-topico 101: arquitetura do sistema 
+	-topico 102: Instalação do linux e gerenciamento de pacotes
+	*topico 103: Comandos GNU e UNIX
+	-topico 104: Dispositivos, Sistemas de Arquivos e FHS
+
+
+
+-Exame 102-500
+	-topico 105: Shells e Shell Scripting 
+	-topico 106: interfaces de usuario e Desktops
+	-topico 107: taregas administrativas
+	-topico 108: servicos essenciais do sistema
+	-topico 109: Fundamentos de Redes 
+	-topico 110: Segurança 
+
+
+links:
+https://www.lpi.org/
+https://www.lpi.org/our-certifications/exam-101-objectives
+
+
+
+
+
+
+Topic 103: GNU and Unix Commands
+
+
+103.3 Perform basic file management
+Weight: 4
+
+Description: Candidates should be able to use the basic Linux commands to manage files and directories.
+
+Key Knowledge Areas:
+
+Copy, move and remove files and directories individually.
+Copy multiple files and directories recursively.
+Remove files and directories recursively.
+Use simple and advanced wildcard specifications in commands.
+Using find to locate and act on files based on type, size, or time.
+Usage of tar, cpio and dd.
+The following is a partial list of the used files, terms and utilities:
+
+cp
+find
+mkdir
+mv
+ls
+rm
+rmdir
+touch
+tar
+cpio
+dd
+file
+gzip
+gunzip
+bzip2
+bunzip2
+xz
+unxz
+file globbing
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+103.3_Perform basic file management-tar_gzip_bzip2_xz
+
+
+comandos para agrupar e comprimir arquivos
+mover arquivos de um lugar para o outro e backup
+
+tar c
+criar um arquivo tar 
+tar x extrair
+tar -t listar o conteudo do arquivo tar
+
+tar cf backup.tar
+c-criar
+f definir nome do arquivo
+p preservar as permissoes
+v verbose 
+
+tar cpvf backup.tar nome-arquivo*
+
+ou tudo 
+
+tar cpvf backup.tar *
+
+
+tar -tf back.tar
+listar conteudo do agrupamento 
+
+
+gzip
+bzip
+zip
+bzip2
+xz
+cada tipo de compactasao 
+é melhor para cada um 
+
+
+
+compactar 
+gzip backup.tar
+compactacao normal, ele some com o arquivo original ,.tar
+e transforma em tar.gzip
+
+descompactar 
+unzip
+gunzip back.tar.gz 
+gzip -d 
+-d descompress
+
+
+gzip -k backup.tar 
+tem o arquivo original
+e o arquivo compactado 
+mander o arquivo original e arquivo compactado 
+
+
+
+bzip -k backup.tar
+
+
+descomprar bzip 
+bzip2 -f 
+unbzip
+
+
+descompactar
+gzip - gunzip / gzip -d
+bzip2 - bzipp2 -d
+
+
+gzip novo_teste-a*
+
+
+
+tar cvpf back.tar novo*
+so agrupando 
+
+se quiser ja compactar no tar usa:
+tar zcvpf backp.tgz novo
+.tgz nome padrao para z 
+z - gzip 
+
+J -> xe
+
+
+j -> gzip2
+
+
+
+
+utilizando tar 
+tar xJS
+descopactar
+
+
+
+z -gzip
+j bzip2
+J - xe
+
+descompactar x
+
+
+
+
+
+
+
+
+
+
+
+
+
+Compactando e descompactando arquivos com zip no Linux
+https://www.youtube.com/watch?v=b8TulLJKp8Q
+
+utilitario zip 
+
+
+apt-get install zip
+
+
+zip bkp-zip nome-arquivo-compactar
+
+
+vizualizar o conteudo do arquivo 
+zipinfo nome-arquivo-zipado
+
+
+adicionar mais arquivos desse arquivo ja zipado
+zip bkp-zip arquivo-q-quer-acrescentar
+
+
+
+excluir um arquivo no zip
+zip arq-zip -d nome-arquico-q-quer-excluir
+
+
+
+
+#incluir todos exceto algum arquivo
+zip test * -x *.zip
+-x exclude
+
+
+
+zipar um diretorio inteiro 
+zip -arq-doc -r ./Documentos 
+-r recursao
+
+
+nivel de compressao
+numero maximo é 9
+zip -arq-doc -r ./Documentos -9
+
+
+
+descompactar 
+unzip -l nome-arquivo-zip
+mostra o conteudo no arquivo zipado 
+
+unzip -v nome-arquivo-zip
+mostra mais informacoes 
+
+
+
+testar antes de descompactar 
+unzip -t arq-zip.zip
+-t 
+retorna OK
+
+
+
+descompactar
+unzip arq-zip.zip
+
+
+
+#jogar em outro diretorio 
+unzip arq-zip.zip -d ./Documentos
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+zip Command
+https://linuxize.com/post/how-to-zip-files-and-directories-in-linux/
+
+zip OPTIONS ARCHIVE_NAME FILES
+
+The zip utility is not installed by default in most Linux distributions, but you can easily install it using the package manager of your distribution
+
+Install Zip on Ubuntu and Debian
+sudo apt install zip
+
+Install Zip on CentOS and Fedora
+sudo yum install zip
+
+
+
+How to ZIP Files and Directories
+zip archivename.zip filename1 filename2 filename3
+
+output
+adding: filename1 (deflated 63%)
+adding: filename2 (stored 0%)
+adding: filename3 (deflated 38%)
+
+When specifying the Zip archive name if you omit the .zip extension it will be added automatically unless the archive name contains a dot. zip archivename.zip filename will create an archive with the same name as would zip archivename filename
+
+To suppress(nao mostrar output) the output of the zip command, use the -q option:
+zip -q archivename.zip filename1 filename2 filename3
+
+To create a Zip archive of a directory you would use:
+zip -r archivename.zip directory_name
+
+You can also add multiple files and directories in the same archive:
+zip -r archivename.zip directory_name1 directory_name2 file1 file1
+
+The zip command allows you to specify a compression level using number prefixed with a dash from 0 to 9. The default compression level is -6. When using -0, all files will be stored without compression. -9 will force the zip command to use an optimal compression for all files.
+
+For example, to use the compression level -9, you would type something like this:
+
+zip -9 -r archivename.zip directory_name
+
+
+Creating a Password Protected ZIP file
+If you have sensitive information that needs to be stored in the archive you can encrypt it using the -e option:
+zip -e  archivename.zip directory_name
+You will be prompted to enter and verify the archive password:
+output
+Enter password:
+Verify password:
+
+
+
+
+Creating Split Zip File
+Imagine you want to store the Zip archive on a file hosting service that has a file size upload limit of 1GB and your Zip archive is 5GB.
+
+You can create a new split Zip file using the -s option followed by specified size. The multiplier can be k (kilobytes), m (megabytes), g (gigabytes), or t (terabytes)
+
+zip -s 1g -r archivename.zip directory_name
+The command above will keep creating new archives in a set after it reaches the specified size limit.
+
+archivename.zip
+archivename.z01
+archivename.z02
+archivename.z03
+archivename.z04
+
+
+
+
+
+
+https://www.youtube.com/watch?v=iHoFc1Ynw-0
+tar
+
+tar empacotar arquivos
+n comprime arquivos 
+so junta arquivos em um so arquivo 
+
+tar [parametro] [nome_do_arquivo_tar] [arquivo-de-origem]
+
+opcoes:
+-c: criar um novo arquivo tar
+-t exibe o conteudo de um arquivo tar
+-p mantem as permissoes originais do arquivo
+-r: adiciona arquivos a um arquivo tar existente
+-f permite especificar o arquivo tar a ser utilizado
+-v exibe detalhes da operacoa
+-x extrai arquivo de um arquivo tar existente
+-x comprime o arquivo tar resultnte com o gzip
+-C especifica o direotrio dos arquivos a serem armazenados
+
+
+exs:
+tar -cf plantar.tar bromelia.txt orquidia.txt
+
+add mais um arquivo 
+tar -rf plantar.tar araceas.txt
+
+excluir um arquivo 
+tar -f plantas.tar --delete araceas.txt
+ou -d
+
+
+
+ver conteudo
+tar -tg plantas
+
+
+acrescentar arquivo 
+tar -rf plantas.tar araceas.txt
+r acrescentar
+
+
+extrarir os arquivos de volta, do tar 
+tar -xvf plantas.tar 
+-x extrect 
+
+
+extrarir um arquivo expecifico so 
+tar -xvf plantar.tar bromelia.txt
+
+
+como tar nao faz compactacao pode combinar com:
+TAR + gzip ou bzip2
+-o comando tar apenas empacota arquivos, mas n os comprime
+-para usar tar com gzip - parametro -z. resultado tera a extensao tar.gz
+-para usar tar com bzip2 basta acrescentar parametro -j. O arquivo resultante extensao .tar.bz2
+
+
+
+criar um tar compactado 
+tar -cvzf plantas.tar.gz *
+
+extrarir tar compactado 
+tar -xzvf plantas.tar.gz
+
+
+
+criar tar compactado
+tar -cvjf plantas.tar.bz2 *
+
+extrair tar compactado 
+tar -xjvf plantas.tar.bz2
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#********************************************************************************************************************#
+#                                                   REFERENCIAS      	                                         	 #
+#https://www.udemy.com/course/curso-online-certificacao-linux-lpic1-comptia/learn/lecture/17614470#overview			 #
+#********************************************************************************************************************#

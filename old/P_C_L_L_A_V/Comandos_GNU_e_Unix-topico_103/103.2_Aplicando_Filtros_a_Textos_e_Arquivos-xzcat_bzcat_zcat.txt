@@ -1,0 +1,155 @@
+#************************************************#
+# OBJETIVO  : Linux-LPI						 	 #
+# CRIACAO   : 22-01-2020	                 	 #
+# VERSAO    : 1.0		                     	 #
+# AUTOR     : Pedro Akira Danno Lima             #
+#************************************************#
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+OS TOPICOS DOS EXAMES: 10 topicos.
+
+-Exame 101-500
+	-topico 101: arquitetura do sistema 
+	-topico 102: Instalação do linux e gerenciamento de pacotes
+	*topico 103: Comandos GNU e UNIX
+	-topico 104: Dispositivos, Sistemas de Arquivos e FHS
+
+
+
+-Exame 102-500
+	-topico 105: Shells e Shell Scripting 
+	-topico 106: interfaces de usuario e Desktops
+	-topico 107: taregas administrativas
+	-topico 108: servicos essenciais do sistema
+	-topico 109: Fundamentos de Redes 
+	-topico 110: Segurança 
+
+
+links:
+https://www.lpi.org/
+https://www.lpi.org/our-certifications/exam-101-objectives
+
+
+
+
+
+
+Topic 103: GNU and Unix Commands
+
+
+103.2 Process text streams using filters
+Weight: 2
+
+Description: Candidates should be able to apply filters to text streams.
+
+Key Knowledge Areas:
+
+Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package.
+The following is a partial list of the used files, terms and utilities:
+
+bzcat
+cat
+cut
+head
+less
+md5sum
+nl
+od
+paste
+sed
+sha256sum
+sha512sum
+sort
+split
+tail
+tr
+uniq
+wc
+xzcat
+zcat
+ 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+103.2_Aplicando_Filtros_a_Textos_e_Arquivos-xzcat_bzcat_zcat
+
+como visualizar conteudo de um arquivo compactado
+
+cd /Exercicios
+
+ls -ltr arquivolongo.txt*
+
+
+voce pode criar arquivos com os comandos;
+# xz -k arquivo.txt
+# bzip2 -k arquivolongo.txt
+# gzip -k arquivolongo.txt
+
+
+file arquivolongo.txt
+
+
+conteudo do arquivo compactado 
+se fizer o cat nao da para ver 
+
+ler sem ter q descompactar 
+
+logs sao compactados 
+
+nao precisa descompactar para ler o conteudo 
+
+
+comandos especifica para cada algorimo 
+
+xzcat arquivolongo.txt.xz
+
+
+bzcat arquivolongo.txt.xz
+
+zcat arquivolongo.txt.xz
+# para ler aquivo zip 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#********************************************************************************************************************#
+#                                                   REFERENCIAS      	                                         	 #
+#https://www.udemy.com/course/curso-online-certificacao-linux-lpic1-comptia/learn/lecture/17614470#overview			 #
+#********************************************************************************************************************#

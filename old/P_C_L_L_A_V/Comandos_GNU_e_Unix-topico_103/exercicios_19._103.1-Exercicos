@@ -1,0 +1,68 @@
+
+
+#************************************************#
+# OBJETIVO  : Linux-LPI						 	 #
+# CRIACAO   : 12-02-2020	                 	 #
+# VERSAO    : 1.0		                     	 #
+# AUTOR     : Pedro Akira Danno Lima             #
+#************************************************#
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+exercicios_19._103.1-Exercicos
+
+
+
+103.1 Trabalhando na Linha de Comando
+
+1. Encontre as seguintes informações sobre a sua instalação Linux:
+
+O caminho completo do arquivo .bash_history para o seu usuário;
+		set  | grep history
+		echo $HISTFILE
+		HISTFILE=/home/jarvis/.bash_history
+		#echo $HISTFILE VARIAVEIS DE AMBIENTE
+		O release do kernel instalado
+
+
+
+Os diretórios incluídos em seu PATH
+		echo $PATH
+		/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+
+O hostname da máquina
+	hostname
+	srv02-Xubuntu
+
+O PID da sua sessão shell atual
+	echo $$
+	1663
+
+A localização do comando tar
+	which tar
+	/usr/bin/tar
+
+
+2. Crie e exporte uma variável chamada "NOME" que contenha o seu nome completo.
+		NOME='Pedro Akira Danno Lima
+		export NOME
+		echo $NOME
+		Pedro Akira Danno Lima
+
+
+3. Crie um comando que escreva na tela a seguinte frase: "O Conteúdo da Variável $NOME é: <Valor da Variável NOME>"
+	   echo "O Conteúdo da Variável " '$NOME' é: "$NOME"
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+#********************************************************************************************************************#
+#                                                   REFERENCIAS      	                                         	 #
+#https://www.udemy.com/course/curso-online-certificacao-linux-lpic1-comptia/learn/lecture/17614470#overview			 #
+#********************************************************************************************************************#

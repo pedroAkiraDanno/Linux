@@ -1,0 +1,244 @@
+#************************************************#
+# OBJETIVO  : Linux-LPI						 	 #
+# CRIACAO   : 22-01-2020	                 	 #
+# VERSAO    : 1.0		                     	 #
+# AUTOR     : Pedro Akira Danno Lima             #
+#************************************************#
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+OS TOPICOS DOS EXAMES: 10 topicos.
+
+-Exame 101-500
+	-topico 101: arquitetura do sistema 
+	-topico 102: Instalação do linux e gerenciamento de pacotes
+	*topico 103: Comandos GNU e UNIX
+	-topico 104: Dispositivos, Sistemas de Arquivos e FHS
+
+
+
+-Exame 102-500
+	-topico 105: Shells e Shell Scripting 
+	-topico 106: interfaces de usuario e Desktops
+	-topico 107: taregas administrativas
+	-topico 108: servicos essenciais do sistema
+	-topico 109: Fundamentos de Redes 
+	-topico 110: Segurança 
+
+
+links:
+https://www.lpi.org/
+https://www.lpi.org/our-certifications/exam-101-objectives
+
+
+
+
+
+
+Topic 103: GNU and Unix Commands
+
+
+103.2 Process text streams using filters
+Weight: 2
+
+Description: Candidates should be able to apply filters to text streams.
+
+Key Knowledge Areas:
+
+Send text files and output streams through text utility filters to modify the output using standard UNIX commands found in the GNU textutils package.
+The following is a partial list of the used files, terms and utilities:
+
+bzcat
+cat
+cut
+head
+less
+md5sum
+nl
+od
+paste
+sed
+sha256sum
+sha512sum
+sort
+split
+tail
+tr
+uniq
+wc
+xzcat
+zcat
+ 
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+103.2_Aplicando_Filtros_a_Textos_e_Arquivos-cat_head_tail_sort_less_wc
+
+tr
+substituir ou deletar algum linha
+ele funciona apenas com | pipe ou redirecionamento 
+cat alunox.txt | tar a-z A-Z
+de minusculo para maiusculo 
+
+cat alunos.txt | tr A E
+tudo que era A vira E  
+
+cat alunos.txt | tr tr ei EI
+nao precisa ter ei junto, ele olha cada um dos caracteres
+
+
+
+cat alunos.txt | tr [:upper:] [:lower:]
+todo q estava em maiusculo em minusculo 
+
+tr --help
+
+cat alunos.txt | tr ' ' _
+toda vez que tiver um espaco vazio ele vai trocar por _
+
+
+
+cat alunos.txt | tr -d A
+deletar todos as linhas A 
+
+cat alunos.txt | tr -d ' '
+deletar os espacos 
+
+
+
+
+
+cut recortar text 
+cut -c1-5 aluno.txt
+-c caracter 
+retirar o caracter 1 ao 5 
+cut -c5-10
+
+
+cut -c1,2,5 alunos.txt
+retorna o caracter 1,2 e 5 
+
+
+cut -c-5 alunos.txt
+exibe do caracter 1 ate o 5 apenas
+
+cut -c5- alunos.txt
+exibe do caracter 5 para frente 
+
+
+
+cada palavra é um campo, pode ser espaco ; 
+-d delimitador
+cut -d" " -f1 alunos.txt
+cut -d" " -f1-3 alunos.txt
+-f campo = palavra
+
+
+
+
+
+sed 
+ferramenta poderosa
+usado normalmente em conjunto com empressoes regulares
+
+
+sed
+procurar um conteudo e subistiruie
+e deletar 
+
+sed 's/Silva/Sousa' alunos.txt
+o comando vai estar em ''
+s/ subistituir 
+*so subistitui uma ocorencia por linha 
+
+sed 's/Silva/Souga/g' alunos.txt
+/g substituir mais de uma ocorrencia por linha  da palavra encontrada 
+
+
+sed '3,5 d' alunos.txt
+apagar da linha 3 ate a 5 
+
+
+sed '/Claudia/d' aluno.txt
+apagar claudia 
+/ procurar 
+
+
+
+
+
+
+tar -s
+tira partes repeditas de uma string
+echo "curso de liiiiiinux" | tr -s i
+
+
+echo "curso    de linux " | tr -s  ""
+tira espaco 
+
+
+quebra de linha no win e linux 
+win \n -> LF line fedd nova linha 
+\r CR carriage return 
+
+win		CR-LF 	\r\n   ^M
+unix    LF      \n     $
+
+
+
+file arquivogerado*
+
+dosfs
+
+
+
+
+od -c arquivowindowns.txt
+
+
+
+
+tr -d "\r" < arquivoWindowns.txt > novoArquivo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#********************************************************************************************************************#
+#                                                   REFERENCIAS      	                                         	 #
+#https://www.udemy.com/course/curso-online-certificacao-linux-lpic1-comptia/learn/lecture/17614470#overview			 #
+#********************************************************************************************************************#
